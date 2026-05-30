@@ -10,21 +10,23 @@ Drop-in skills for AI coding agents (Claude Code, Cursor, Cline, Codex, and 50+ 
 npx skills add liquidpadbot/liquidpad-skills
 ```
 
-Or pick specific skills:
+Or pick specific skills (use the display names from frontmatter):
 
 ```bash
-npx skills add liquidpadbot/liquidpad-skills --skill liquidpad-launch
-npx skills add liquidpadbot/liquidpad-skills --skill liquidpad-verify
+npx skills add liquidpadbot/liquidpad-skills --skill "LiquidPad Launch"
+npx skills add liquidpadbot/liquidpad-skills --skill "LiquidPad Verify"
+npx skills add liquidpadbot/liquidpad-skills --skill "LiquidPad Fees"
+npx skills add liquidpadbot/liquidpad-skills --skill "LiquidPad MCP"
 ```
 
 ## What's inside
 
 | Skill | What it does |
 |---|---|
-| `liquidpad-launch` | Pitch a vibe, get a token concept, ship onchain — end-to-end deploy flow |
-| `liquidpad-verify` | Cryptographically verify any Base token's LiquidPad provenance |
-| `liquidpad-fees` | Read live fee earnings, burn proof, and LIQ buyback ledger |
-| `liquidpad-mcp` | Connect Claude / Cursor / Kiro to LiquidPad's MCP server for richer tooling |
+| `LiquidPad Launch` | Pitch a vibe, get a token concept, ship onchain — end-to-end deploy flow |
+| `LiquidPad Verify` | Cryptographically verify any Base token's LiquidPad provenance |
+| `LiquidPad Fees` | Read live fee earnings, burn proof, and LIQ buyback ledger |
+| `LiquidPad MCP` | Connect Claude / Cursor / Kiro to LiquidPad's MCP server for richer tooling |
 
 All skills hit **public, CORS-enabled, no-auth** endpoints. The `liquidpad-launch` skill needs an API key from [@liquidpadbot Telegram](https://t.me/liquidpadbot) for the deploy step.
 
